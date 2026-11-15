@@ -1,7 +1,7 @@
 {
   "name": "Trollflucht",
   "short_name": "Trollflucht",
-  "description": "Ein Troll-Spiel mit zwölf Hauptleveln und drei geheimen Leveln.",
+  "description": "Ein Troll-Spiel mit zwölf Hauptleveln, geheimen Leveln und Token-Shop.",
   "lang": "de",
   "start_url": "./index.html",
   "scope": "./",
@@ -11,3 +11,4 @@
   "theme_color": "#10151b",
   "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }
+

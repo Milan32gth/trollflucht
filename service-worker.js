@@ -1,4 +1,4 @@
-const CACHE = 'trollflucht-mobile-v8';
+const CACHE = 'trollflucht-mobile-v9';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
@@ -16,4 +16,5 @@ self.addEventListener('fetch', event => {
     return response;
   })));
 });
+
 
