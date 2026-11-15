@@ -1,7 +1,7 @@
 {
   "name": "Trollflucht",
   "short_name": "Trollflucht",
-  "description": "Ein kleines Troll-Platformer-Spiel mit sechs Leveln.",
+  "description": "Ein Troll-Spiel mit zwölf Hauptleveln und drei geheimen Leveln.",
   "lang": "de",
   "start_url": "./index.html",
   "scope": "./",

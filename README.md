@@ -1,6 +1,6 @@
 # Trollflucht
 
-Ein Browser-Platformer mit zwölf normalen und drei geheimen Levels. Die geheimen Levels werden nach dem normalen Levelpfad freigeschaltet und erscheinen nicht im normalen Levelpfad. Jedes Level hat eine eigene düstere Musikvariation; am Ende erscheint „Yay! – cool dass du es geschafft hast“.
+Ein Browser-Platformer mit zwölf normalen und drei geheimen Levels. Die geheimen Levels werden nach dem normalen Levelpfad freigeschaltet und erscheinen nicht im normalen Levelpfad. Deutsch und Englisch sind im Einstellungsmenü verfügbar. Jedes Level hat eine eigene düstere Musikvariation; am Ende erscheint „Yay! – cool dass du es geschafft hast“.
 
 ## Deployment
 
