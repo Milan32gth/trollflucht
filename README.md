@@ -1,6 +1,6 @@
 # Trollflucht
 
-Ein Browser-Platformer mit zwölf Leveln, Touch-Steuerung und einem Startmenü für die Tonwahl. Mit Ton spielt jedes Level eine eigene düstere Musikvariation und enthält einen Jumpscare; ohne Ton bleiben Musik und Jumpscares aus.
+Ein Browser-Platformer mit zwölf normalen und drei geheimen Levels. Die geheimen Levels werden nach dem normalen Levelpfad freigeschaltet und erscheinen nicht im normalen Levelpfad. Jedes Level hat eine eigene düstere Musikvariation; am Ende erscheint „Yay! – cool dass du es geschafft hast“.
 
 ## Deployment
 
