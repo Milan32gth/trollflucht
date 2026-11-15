@@ -1,12 +1,20 @@
-const CACHE = 'trollflucht-mobile-v14';
+const CACHE = 'trollflucht-mobile-v15';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
   self.skipWaiting();
 });
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))));
-  self.clients.claim();
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    const previousAppCaches = keys.filter(key => key.startsWith('trollflucht-mobile-') && key !== CACHE);
+    await Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)));
+    await self.clients.claim();
+    if (previousAppCaches.length) {
+      const clients = await self.clients.matchAll({ type: 'window' });
+      await Promise.all(clients.map(client => client.navigate(client.url).catch(() => null)));
+    }
+  })());
 });
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
@@ -16,11 +24,3 @@ self.addEventListener('fetch', event => {
     return response;
   })));
 });
-
-
-
-
-
-
-
-
